@@ -1,0 +1,176 @@
+
+
+/* Wrapper */
+
+.gglra-auth-signup-ui-wrapper{
+height:100vh;
+width:100%;
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:flex-end;
+padding:60px;
+position:relative;
+}
+
+/* Brand */
+
+.gglra-auth-signup-ui-brand{
+position:absolute;
+top:40px;
+left:50px;
+color:white;
+}
+
+.gglra-auth-signup-ui-logo{
+font-size:26px;
+font-weight:700;
+}
+
+.gglra-auth-signup-ui-tagline{
+font-size:12px;
+}
+
+/* Card */
+
+.gglra-auth-signup-ui-card{
+width:460px;
+background:rgba(255,255,255,0.92);
+border-radius:22px;
+padding:40px;
+box-shadow:0 18px 45px rgba(0,0,0,0.25);
+}
+
+/* Heading */
+
+.gglra-auth-signup-ui-title{
+text-align:center;
+font-size:28px;
+margin-bottom:8px;
+}
+
+.gglra-auth-signup-ui-subtitle{
+text-align:center;
+font-size:13px;
+color:#666;
+margin-bottom:25px;
+}
+
+/* Rows */
+
+.gglra-auth-signup-ui-row{
+display:flex;
+gap:15px;
+margin-bottom:18px;
+}
+
+/* Fields */
+
+.gglra-auth-signup-ui-field{
+flex:1;
+display:flex;
+flex-direction:column;
+}
+
+.gglra-auth-signup-ui-field label{
+font-size:12px;
+margin-bottom:5px;
+color:#444;
+}
+
+.gglra-auth-signup-ui-field input{
+padding:11px;
+border-radius:8px;
+border:1px solid #ddd;
+}
+
+/* Full width */
+
+.gglra-auth-signup-ui-full{
+width:100%;
+margin-bottom:18px;
+}
+
+/* Button */
+
+.gglra-auth-signup-ui-button{
+width:100%;
+margin-top:15px;
+padding:14px;
+border:none;
+border-radius:10px;
+background:#45D69A;
+color:white;
+font-weight:600;
+cursor:pointer;
+}
+
+/* Login text */
+
+.gglra-auth-signup-ui-login-text{
+text-align:center;
+margin-top:18px;
+font-size:13px;
+}
+
+.gglra-auth-signup-ui-login-text span{
+color:#45D69A;
+cursor:pointer;
+}
+
+/* Footer */
+
+.gglra-auth-signup-ui-footer-links{
+display:flex;
+justify-content:space-between;
+font-size:12px;
+margin-top:20px;
+color:#777;
+}
+
+/* Opportunity */
+
+.gglra-auth-signup-ui-opportunity{
+position:absolute;
+bottom:40px;
+left:40px;
+background:white;
+padding:18px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.gglra-auth-signup-ui-opportunity-tag{
+font-size:11px;
+color:#45D69A;
+font-weight:600;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.gglra-auth-signup-ui-wrapper{
+justify-content:center;
+padding:20px;
+}
+
+.gglra-auth-signup-ui-card{
+width:100%;
+max-width:400px;
+}
+
+.gglra-auth-signup-ui-opportunity{
+display:none;
+}
+
+}
+
+@media(max-width:600px){
+
+.gglra-auth-signup-ui-row{
+flex-direction:column;
+}
+
+}

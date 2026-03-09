@@ -1,0 +1,239 @@
+.s6hm-section {
+  padding: 100px 8%;
+  background: linear-gradient(
+    135deg,
+    rgba(227, 255, 237, 0.4) 0%,
+    #ffffff 50%,
+    rgba(255, 245, 227, 0.4) 100%
+  );
+  overflow: hidden;
+}
+.s6hm-section::before{
+  content: "";
+  position: absolute;
+  right: 0px;        /* push slightly outside for smooth glow */
+  /* top: 100%; */
+  transform: translateY(-50%);
+  
+  width: 200px;
+  height: 500px;
+  
+  background: radial-gradient(
+    circle,
+    #eeae79 0%,
+    rgba(221, 155, 74, 0.502) 30%,
+    rgba(221, 157, 74, 0.409) 60%,
+    transparent 80%
+  );
+
+  filter: blur(80px);   /* makes it very soft */
+  pointer-events: none;
+}
+.s6hm-text-content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.s6hm-subtitle {
+  display: inline-block;
+    background: #e9fbf3;
+    color: #1A3C34;
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    font-family: "gued" sans-serif;
+}
+
+.s6hm-main-title {
+  font-size: 34px;
+  font-weight: 500;
+  margin-top: 20px;
+  font-family: "Droxen", sans-serif;
+}
+
+.s6hm-highlight {
+  color: #4ADD97;
+}
+
+.s6hm-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 120px;
+  min-height: 520px;
+}
+
+.s6hm-left {
+  position: relative;
+  max-width: 340px;
+}
+.s6hm-header span {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: "Droxen", sans-serif;
+}
+.s6hm-green-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #17d77b;
+  border-radius: 50%;
+  left: -80px;
+  bottom: 70px;
+  /* filter: blur(10px); */
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.s6hm-image {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  filter: drop-shadow(0px 40px 60px rgba(0,0,0,0.15));
+}
+
+/* Floating Card */
+.s6hm-floating-card {
+  max-width: 100px;
+  position: absolute;
+  top: -30px;
+  left: -80px;
+  background: white;
+  padding: 14px 16px;
+  border-radius: 16px;
+  box-shadow: 0px 25px 60px rgba(0,0,0,0.15);
+  z-index: 4;
+ 
+  rotate: -14deg;
+  z-index: 1;
+  animation: s6hm-float 3s ease-in-out infinite;
+}
+.s6hm-floating-card p{
+  font-size: 12px;
+  max-width: 60px;
+  margin: 0;
+  color: #94A3B8;
+}
+.s6hm-floating-card h4 {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+}
+
+/* Top Text */
+.s6hm-card-top p {
+  font-size: 11px;
+  margin: 0;
+  color: #94A3B8;
+}
+
+.s6hm-card-top h4 {
+  margin: 4px 0 10px;
+  font-size: 14px;
+  color: #4ADD97;
+}
+
+/* Mini Graph */
+.s6hm-mini-graph {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.s6hm-mini-graph span {
+  width: 6px;
+  background: linear-gradient(to top, #4ADD97, #7df0a5);
+  border-radius: 4px;
+  animation: s6hm-grow 1.5s ease forwards;
+  transform-origin: bottom;
+}
+
+/* Graph Animation */
+@keyframes s6hm-grow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.s6hm-right {
+  max-width: 500px;
+  padding-top: 40px;
+}
+
+.s6hm-header {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.s6hm-green-text {
+  color: #4ADD97;
+}
+
+.s6hm-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin: 25px 0 40px;
+}
+
+.s6hm-stats {
+  display: flex;
+  gap: 80px;
+}
+
+.s6hm-stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.s6hm-stat-value {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.s6hm-stat-label {
+  font-size: 14px;
+  color: #777;
+  margin-top: 6px;
+}
+
+.s6hm-fade {
+  animation: s6hm-fadeIn 0.8s ease-in-out;
+}
+
+@keyframes s6hm-fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .s6hm-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+    text-align: left;
+  }
+
+  .s6hm-stats {
+    justify-content: center;
+  }
+  .s6hm-section::before{
+    display: none;
+  }
+  .s6hm-main-title{
+    font-size: 18px;
+  }
+  .s6hm-floating-card{display: none;}
+  .s6hm-green-circle{display: none;}
+  .s6hm-stat-value{font-size: 16px;}
+}

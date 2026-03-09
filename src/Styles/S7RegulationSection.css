@@ -1,0 +1,388 @@
+/* Container & Global Scope */
+.superunique-container {
+  --sq-mint: #00ffa3;
+  --sq-dark: #121212;
+  --sq-gray: #666666;
+  --sq-glass: rgba(255, 255, 255, 0.7);
+  
+  padding: 100px 8%;
+  background-color: #fafffd;
+  font-family: 'gued',  sans-serif;
+  color: var(--sq-dark);
+}
+
+/* Header Styles */
+.superunique-header-wrapper {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.superunique-badge-small {
+  /* display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 6px 16px;
+  border-radius: 50px;
+  border: 1px solid #e0eadd;
+  color: var(--sq-gray);
+  margin-bottom: 15px; */
+      display: inline-block;
+    background-color: #d7fce9;
+    color: #00d383;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.superunique-main-heading {
+  font-size:28PX;
+  font-weight: 800;
+  margin-bottom: 30px;
+  font-family: "Droxen",sans-serif;
+  letter-spacing: 1px;
+}
+
+.superunique-text-mint {
+  color: var(--sq-mint);
+}
+
+/* Tab Switcher */
+.superunique-toggle-group {
+  display: inline-flex;
+  background: white;
+  padding: 6px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.superunique-tab-btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+  border: 1px solid #f0f0f0;
+  font-family: "gued",sans-serif;
+  font-size: 16px;
+}
+
+.superunique-tab-btn.superunique-active {
+  background: var(--sq-mint);
+  color: var(--sq-dark);
+}
+
+/* Glass Card Layout */
+.superunique-glass-card {
+  background: #d7fce9a1;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(192, 217, 208, 0);
+  border-radius: 32px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  box-shadow: 0 30px 60px rgba(0, 50, 30, 0.04);
+}
+
+.superunique-glass-card::after{
+  
+   content: "";
+  position: absolute;
+  left: 10%;        /* push slightly outside for smooth glow */
+  top: 50%;
+  transform: translateY(-50%);
+  
+  width: 500px;
+  height: 300px;
+  
+  background: radial-gradient(
+    circle,
+    #e6b863 5%,
+    /* rgba(74, 221, 151, 0.4) */
+   #dd964a65  30%,
+    rgba(221, 152, 74, 0.15) 60%,
+    transparent 80%
+  );
+
+  filter: blur(80px);   /* makes it very soft */
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+
+.superunique-shield-graphic {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.superunique-card-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-family: "Droxen",sans-serif;
+}
+
+.superunique-card-description {
+  color: var(--sq-gray);
+  line-height: 1.6;
+  font-size: 1.1rem;
+  max-width: 400px;
+}
+
+.superunique-cta-button {
+  margin-top: 30px;
+  background: var(--sq-mint);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.superunique-cta-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Inner Tiles */
+.superunique-info-tile {
+  background: transparent;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #817e7e;
+  margin-top: 50px;
+}
+
+.superunique-tile-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.superunique-flag { font-size: 1.5rem; }
+.superunique-tile-title { font-weight: 700; margin-bottom: 10px; font-size: 0.9rem; font-family: "Droxen",sans-serif; }
+.superunique-tile-text { font-size: 0.85rem; color: var(--sq-gray); line-height: 1.5; }
+
+/* Testimonial Section */
+.superunique-social-proof { margin-top: 120px; }
+.superunique-badge-center { text-align: center; }
+.superunique-testimonial-header { text-align: center; font-size: 28px; font-weight: 800; margin-bottom: 60px; font-family: "Droxen",sans-serif;}
+
+.superunique-testimonial-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.superunique-big-stat { font-size: 48px; font-weight: 400; line-height: 1.1; }
+
+.superunique-stepper { display: flex; gap: 8px; margin-top: 30px; }
+.superunique-step { height: 4px; width: 35px; background: #e0e0e0; border-radius: 2px; }
+.superunique-step-active { background: var(--sq-mint); }
+
+.superunique-quote-container { position: relative; padding-left: 50px; }
+.superunique-quote-icon { 
+  position: absolute; left: 0; top: -10px; 
+  font-size: 5rem; color: var(--sq-mint); opacity: 0.5; font-family: serif;
+}
+
+.superunique-quote-body { font-size: 1.2rem; line-height: 1.7; font-style: italic; color: #444; }
+
+.superunique-author-card { display: flex; align-items: center; gap: 15px; margin-top: 30px; }
+.superunique-avatar { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+.superunique-author-name { display: block; font-weight: 700; }
+.superunique-author-loc { font-size: 0.9rem; color: var(--sq-gray); }
+/* =======================================
+   RESPONSIVE SYSTEM – ALL DEVICES
+========================================== */
+
+/* -------- Large Laptops (1440px ↓) -------- */
+@media (max-width: 1440px) {
+
+  .superunique-container {
+    padding: 80px 6%;
+  }
+
+  .superunique-glass-card {
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .superunique-card-title {
+    font-size: 28px;
+  }
+
+  .superunique-big-stat {
+    font-size: 42px;
+  }
+}
+
+
+/* -------- Standard Laptops (1200px ↓) -------- */
+@media (max-width: 1200px) {
+
+  .superunique-glass-card {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+
+  .superunique-card-description {
+    max-width: 100%;
+  }
+
+  .superunique-testimonial-layout {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+}
+
+
+/* -------- Tablets (992px ↓) -------- */
+@media (max-width: 992px) {
+
+  .superunique-container {
+    padding: 70px 5%;
+  }
+
+  .superunique-main-heading {
+    font-size: 24px;
+  }
+
+  .superunique-card-title {
+    font-size: 24px;
+  }
+
+  .superunique-big-stat {
+    font-size: 36px;
+  }
+
+  .superunique-quote-body {
+    font-size: 1.05rem;
+  }
+
+  .superunique-glass-card {
+    border-radius: 24px;
+  }
+
+  .superunique-info-tile {
+    padding: 25px;
+  }
+}
+
+
+/* -------- Mobile Large (768px ↓) -------- */
+@media (max-width: 768px) {
+
+  .superunique-container {
+    padding: 60px 20px;
+  }
+
+  .superunique-header-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .superunique-main-heading {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .superunique-toggle-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .superunique-tab-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .superunique-glass-card {
+    padding: 30px 20px;
+    gap: 30px;
+
+  }
+  .superunique-glass-card::after {
+    display: none !important;
+  }
+  .superunique-card-title {
+    font-size: 22px;
+  }
+
+  .superunique-card-description {
+    font-size: 0.95rem;
+  }
+
+  .superunique-cta-button {
+    width: 100%;
+  }
+
+  .superunique-big-stat {
+    font-size: 30px;
+  }
+
+  .superunique-quote-body {
+    font-size: 1rem;
+  }
+
+  .superunique-quote-container {
+    padding-left: 35px;
+  }
+
+  .superunique-quote-icon {
+    font-size: 3rem;
+  }
+
+}
+
+
+/* -------- Small Mobile (480px ↓) -------- */
+@media (max-width: 480px) {
+
+  .superunique-container {
+    padding: 50px 15px;
+  }
+
+  .superunique-main-heading {
+    font-size: 18px;
+  }
+
+  .superunique-card-title {
+    font-size: 20px;
+  }
+
+  .superunique-card-description {
+    font-size: 0.9rem;
+  }
+
+  .superunique-big-stat {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .superunique-info-tile {
+    padding: 20px;
+  }
+
+  .superunique-avatar {
+    width: 40px;
+    height: 40px;
+  }
+.superunique-testimonial-header{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+}
