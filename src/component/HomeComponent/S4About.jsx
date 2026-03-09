@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import '../../Styles/S4About.css';
 import icon from "../../assets/S4About/Icon.png"
-import about from "../../assets/S4About/about.png"
+import about from "../../assets/S3WhyChoose/main.jpg"
 const stats = [
   // { label: 'Registered users', value: '2 K+', color: 'green' },
   // { label: 'Total Property Value Listed', value: 'USD 15B+', color: 'dark' },

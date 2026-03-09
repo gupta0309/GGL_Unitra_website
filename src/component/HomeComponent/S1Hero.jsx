@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../Styles/S1Hero.css';
-import left from '../../assets/S1Hero/left.png';
+import left from '../../assets/S1Hero/rightcard.png';
 import left_card from "../../assets/S1Hero/left-card.png"
 import right_card from "../../assets/S1Hero/right-card.png"
 
@@ -45,7 +45,7 @@ const S1Hero = () => {
         <div className="floating-card card-left">
           <img src={left_card} alt="Marina Gate" className='left-card'/>
           <div className="card-info">
-            <h4>Marina Gate 1, Dubai Marina</h4>
+            <h4>Marina Gate 1, Mumbai</h4>
             <p className="percentage">+12.4%</p>
           </div>
         </div>
@@ -54,8 +54,8 @@ const S1Hero = () => {
         <div className="floating-card card-right">
           <img src={right_card} alt="Estate Fund" />
           <div className="card-info">
-            <h4>Khuzama Real Estate Fund</h4>
-            <p className="percentage">12%</p>
+            <h4>Chennai Tower</h4>
+            <p className="percentage">+32.2%</p>
           </div>
         </div>
       </div>

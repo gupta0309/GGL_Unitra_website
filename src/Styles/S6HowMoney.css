@@ -7,6 +7,7 @@
     rgba(255, 245, 227, 0.4) 100%
   );
   overflow: hidden;
+  padding-bottom: 50px;
 }
 .s6hm-section::before{
   content: "";

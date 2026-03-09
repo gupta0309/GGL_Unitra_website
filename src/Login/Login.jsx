@@ -4,6 +4,9 @@ import bgImage from "../assets/Login/villa.jpg";
 import logo from "../assets/logoblack.png"
 import google from "../assets/Login/SVG.png"
 import fb from "../assets/Login/fb.png"
+import opp from "../assets/Login/opp.jpg"
+import email from "../assets/Login/gmail.png"
+import password from "../assets/Login/password.png"
 const GGLRAAuthPortalLogin = () => {
   return (
   <div
@@ -21,22 +24,36 @@ backgroundImage: `linear-gradient(#0F172A66,#0F172A66), url(${bgImage})`
 
       {/* Login Card */}
       <div className="gglra-auth-portal-card">
-        <h1 className="gglra-auth-portal-heading">WELCOME BACK</h1>
+        <h1 className="gglra-auth-portal-heading">Welcome Back</h1>
 
         <p className="gglra-auth-portal-subheading">
           Experience the pinnacle of real estate management.
         </p>
 
-        <div className="gglra-auth-portal-field">
+        {/* <div className="gglra-auth-portal-field">
           <label>Email Address</label>
           <input
             type="email"
             className="gglra-auth-portal-input"
             placeholder="Enter email"
           />
-        </div>
+        </div> */}
 
         <div className="gglra-auth-portal-field">
+  <label>Email Address</label>
+
+  <div className="gglra-auth-portal-input-box">
+    <img src={email}className="gglra-input-icon" alt="email"/>
+
+    <input
+      type="email"
+      className="gglra-auth-portal-input"
+      placeholder="Enter email"
+    />
+  </div>
+</div>
+
+        {/* <div className="gglra-auth-portal-field">
           <div className="gglra-auth-portal-password-row">
             <label>Password</label>
             <span className="gglra-auth-portal-forgot-link">
@@ -49,7 +66,28 @@ backgroundImage: `linear-gradient(#0F172A66,#0F172A66), url(${bgImage})`
             className="gglra-auth-portal-input"
             placeholder="Enter password"
           />
-        </div>
+        </div> */}
+
+
+        
+        <div className="gglra-auth-portal-field">
+ <div className="gglra-auth-portal-password-row">
+            <label>Password</label>
+            <span className="gglra-auth-portal-forgot-link">
+              Forgot Password?
+            </span>
+          </div>
+
+  <div className="gglra-auth-portal-input-box">
+    <img src={password} className="gglra-input-icon-pass" alt="email"/>
+
+    <input
+      type="email"
+      className="gglra-auth-portal-input"
+      placeholder="Enter email"
+    />
+  </div>
+</div>
 
         <button className="gglra-auth-portal-login-btn">
           SIGN IN
@@ -82,6 +120,8 @@ backgroundImage: `linear-gradient(#0F172A66,#0F172A66), url(${bgImage})`
 
       {/* Opportunity Card */}
       <div className="gglra-auth-portal-opportunity">
+        <img src={opp}></img>
+        <div>
         <p className="gglra-auth-portal-opportunity-tag">
           NEW OPPORTUNITY
         </p>
@@ -93,6 +133,7 @@ backgroundImage: `linear-gradient(#0F172A66,#0F172A66), url(${bgImage})`
         <span className="gglra-auth-portal-opportunity-location">
           Manhattan, New York
         </span>
+        </div>
       </div>
     </div>
   );

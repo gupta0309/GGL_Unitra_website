@@ -20,10 +20,12 @@ transform: translateY(55%);
     rgba(168, 105, 45, 0.4) 30%,
     rgba(240, 187, 109, 0.15) 60%,
     transparent 100%
+    
   );
 
   filter: blur(120px);   /* makes it very soft */
   pointer-events: none;
+  z-index: 0;
 }
 /* Main Container */
 .how-works-container {
@@ -161,9 +163,10 @@ transform: translateY(55%);
   position: relative;
   width: 100%;
   max-width: 500px;
-  height: auto;
+  height: 620px;   /* important: fixed height to stop shifting */
 }
 
+/* all images stacked */
 .dynamic-image {
   position: absolute;
   top: 0;
@@ -176,16 +179,15 @@ transform: translateY(55%);
   transition: opacity 0.8s ease, transform 0.8s ease;
 
   filter:
-    drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25))
-    drop-shadow(0 0 80px rgba(172, 240, 207, 0.4));
+    drop-shadow(0 20px 40px rgba(0,0,0,0.25))
+    drop-shadow(0 0 80px rgba(172,240,207,0.4));
 }
 
+/* active image only visible */
 .dynamic-image.active {
   opacity: 1;
   transform: scale(1);
-  position: relative;
 }
-
 /* Desktop Layout */
 @media (min-width: 768px) {
   .how-works-container {

@@ -190,7 +190,7 @@
 .superunique-big-stat { font-size: 48px; font-weight: 400; line-height: 1.1; }
 
 .superunique-stepper { display: flex; gap: 8px; margin-top: 30px; }
-.superunique-step { height: 4px; width: 35px; background: #e0e0e0; border-radius: 2px; }
+.superunique-step { height: 4px; width: 35px; background:transparent; border: 1px solid #000; border-radius: 10px; }
 .superunique-step-active { background: var(--sq-mint); }
 
 .superunique-quote-container { position: relative; padding-left: 50px; }
@@ -198,7 +198,10 @@
   position: absolute; left: 0; top: -10px; 
   font-size: 5rem; color: var(--sq-mint); opacity: 0.5; font-family: serif;
 }
-
+.superunique-quote-icon-close { 
+  position: absolute; left: 280px; bottom: 20px; 
+  font-size: 5rem; color: var(--sq-mint); opacity: 0.5; font-family: serif;
+}
 .superunique-quote-body { font-size: 1.2rem; line-height: 1.7; font-style: italic; color: #444; }
 
 .superunique-author-card { display: flex; align-items: center; gap: 15px; margin-top: 30px; }

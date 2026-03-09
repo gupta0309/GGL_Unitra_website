@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../../Styles/Footer.css";
-import footer from "../../assets/footer2.png";
+import footer from "../../assets/footer11.png";
 import oneso from "../../assets/footer/one.png";
 import twoso from "../../assets/footer/two.png";
 import threeso from "../../assets/footer/three.png";
@@ -144,14 +144,14 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* <div className="nova-footer-bottom">
-          <p className="nova-copyright">© 2026 GGL UNITRA. All Rights Reserved</p>
+        <div className="nova-footer-bottom">
+          <p className="nova-copyright">© 2026 <span> GGL UNITRA.</span> All Rights Reserved</p>
           <div className="nova-legal-links">
             <span>Privacy Policy</span>
             <span className="nova-divider"></span>
             <span>Terms of Service</span>
           </div>
-        </div> */}
+        </div>
       </footer>
     </div>
   );

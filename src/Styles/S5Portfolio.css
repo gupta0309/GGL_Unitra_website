@@ -49,6 +49,7 @@
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 30px;
+  background:#fff;
 }
 
 .header-left h2 { font-size: 24pxs; line-height: 40px; margin-top: 10px;font-family: "Droxen",sans-serif; font-weight: 400; max-width: 375px; letter-spacing: 1px;}

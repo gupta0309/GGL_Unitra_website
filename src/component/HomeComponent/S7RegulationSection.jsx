@@ -99,7 +99,7 @@ const S7RegulationSection = () => {
             <span className="superunique-quote-icon">“</span>
             <p className="superunique-quote-body">
               The platform makes real estate investing simple and accessible. The transparency and structured documentation gave me confidence from day one.
-            </p>
+            </p><span className="superunique-quote-icon-close">”</span>
             <div className="superunique-author-card">
               <img src={avtar} alt="Ayesha K." className="superunique-avatar" />
               <div className="superunique-author-meta">

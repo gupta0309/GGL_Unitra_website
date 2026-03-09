@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../../Styles/S2HowWorks.css";
-import browse from "../../assets/S2HowWorks/right1.png";
-import invest from "../../assets/S2HowWorks/investnew.png";
-import sell from "../../assets/S2HowWorks/SELL.png"
+import browse from "../../assets/S2HowWorks/browse1.png";
+import invest from "../../assets/S2HowWorks/invest11.png";
+import sell from "../../assets/S2HowWorks/earn.png"
 const DATA = [
   {
     id: "browse",

@@ -96,6 +96,7 @@
   height: 363px;
   /* border-radius: 24px; */
   display: block;
+  border-radius: 15px;
 }
 
 .re-platform__floating-card {
