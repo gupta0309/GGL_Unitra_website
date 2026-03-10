@@ -1,7 +1,10 @@
 import React from "react";
-import bgImage from "../assets/villa.jpg";
-import logo from "../assets/logo.png";
-
+import bgImage from "../assets/Login/villa.jpg";
+import logo from "../assets/logoblack.png";
+import "../Styles/Signupui.css"
+import opp from "../assets/Login/opp.jpg"
+import location from "../assets/locationicon.png"
+import { Link } from "react-router-dom";
 const GGLRAAuthSignupPortal = ({ switchToLogin }) => {
   return (
     <div
@@ -12,7 +15,7 @@ const GGLRAAuthSignupPortal = ({ switchToLogin }) => {
 
       {/* Brand */}
       <div className="gglra-auth-signup-portal-brand">
-        <img src={logo} alt="logo" />
+        <Link to="/"> <img src={logo} alt="logo" /></Link>
       </div>
 
       {/* Card */}
@@ -89,7 +92,7 @@ const GGLRAAuthSignupPortal = ({ switchToLogin }) => {
 
         <p className="gglra-auth-signup-portal-login-text">
           Already have an account?
-          <span onClick={switchToLogin}> Sign In</span>
+        <Link to="/signin" ><span onClick={switchToLogin}> Sign In</span></Link>
         </p>
 
         <div className="gglra-auth-signup-portal-footer">
@@ -99,6 +102,24 @@ const GGLRAAuthSignupPortal = ({ switchToLogin }) => {
         </div>
 
       </div>
+
+  <div className="gglra-auth-portal-opportunity">
+        <img src={opp}></img>
+        <div>
+        <p className="gglra-auth-portal-opportunity-tag">
+          NEW OPPORTUNITY
+        </p>
+
+        <h4 className="gglra-auth-portal-opportunity-title">
+          The Grand Reserve Penthouse
+        </h4>
+
+        <span className="gglra-auth-portal-opportunity-location">
+        <img src={location} alt="" /> Manhattan, New York
+        </span>
+        </div>
+      </div>
+
     </div>
   );
 };

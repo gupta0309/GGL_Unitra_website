@@ -27,11 +27,11 @@
   border: 1px solid #e0eadd;
   color: var(--sq-gray);
   margin-bottom: 15px; */
-      display: inline-block;
-    background-color: #d7fce9;
-    color: #00d383;
-    padding: 6px 16px;
-    border-radius: 50px;
+  display: inline-block;
+  background-color: #d7fce9;
+  color: #00d383;
+  padding: 6px 16px;
+  border-radius: 50px;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -96,7 +96,7 @@
 
 .superunique-glass-card::after{
   
-   content: "";
+  content: "";
   position: absolute;
   left: 10%;        /* push slightly outside for smooth glow */
   top: 50%;
@@ -109,19 +109,19 @@
     circle,
     #e6b863 5%,
     /* rgba(74, 221, 151, 0.4) */
-   #dd964a65  30%,
+    #dd964a65  30%,
     rgba(221, 152, 74, 0.15) 60%,
     transparent 80%
-  );
-
-  filter: blur(80px);   /* makes it very soft */
-  pointer-events: none;
-  z-index: -1;
-}
-
-
-
-.superunique-shield-graphic {
+    );
+    
+    filter: blur(80px);   /* makes it very soft */
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  
+  
+  .superunique-shield-graphic {
   font-size: 3rem;
   margin-bottom: 20px;
 }
@@ -185,6 +185,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 100px;
   align-items: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #5a5959;
 }
 
 .superunique-big-stat { font-size: 48px; font-weight: 400; line-height: 1.1; }

@@ -76,6 +76,7 @@
   gap: 10px;
   font-family: "gued",sans-serif;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .btn-signin:hover {
@@ -94,6 +95,7 @@
   gap: 8px;
   font-family: "gued",sans-serif;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .btn-signup:hover {

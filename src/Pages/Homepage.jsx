@@ -9,6 +9,9 @@ import S6HowMoney from "../component/HomeComponent/S6HowMoney.jsx";
 import S7RegulationSection from "../component/HomeComponent/S7RegulationSection.jsx";
 import S1Secondsection from "../component/HomeComponent/S1Secondsection.jsx";
 import Login from "../Login/Login.jsx"
+import Signup from "../Login/Signup.jsx"
+import Header from "../component/Directives/Header.jsx"
+import Footer from "../component/Directives/Footer.jsx";
 // Directive Components
 
 function HomePage() {
@@ -32,6 +35,7 @@ function HomePage() {
 
   return (
     <>
+    <Header/>
       <section id="home">
         <S1Hero />
       </section>
@@ -65,6 +69,8 @@ function HomePage() {
       </section>
 
       {/* <Login/> */}
+      {/* <Signup/> */}
+      <Footer/>
     </>
   );
 }

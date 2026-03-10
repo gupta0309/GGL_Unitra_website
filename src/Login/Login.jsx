@@ -6,7 +6,9 @@ import google from "../assets/Login/SVG.png"
 import fb from "../assets/Login/fb.png"
 import opp from "../assets/Login/opp.jpg"
 import email from "../assets/Login/gmail.png"
+import location from "../assets/locationicon.png"
 import password from "../assets/Login/password.png"
+import {Link} from "react-router-dom"
 const GGLRAAuthPortalLogin = () => {
   return (
   <div
@@ -19,7 +21,9 @@ backgroundImage: `linear-gradient(#0F172A66,#0F172A66), url(${bgImage})`
 
       {/* Logo */}
       <div className="gglra-auth-portal-brand">
-       <img src={logo} alt="logo"/>
+       <Link to="/">
+    <img src={logo} alt="logo" />
+  </Link>
       </div>
 
       {/* Login Card */}
@@ -108,7 +112,7 @@ backgroundImage: `linear-gradient(#0F172A66,#0F172A66), url(${bgImage})`
         </div>
 
         <p className="gglra-auth-portal-signup-text">
-          Don’t have an account? <span>Sign Up</span>
+          Don’t have an account? <Link to="/signup"><span>Sign Up</span></Link>
         </p>
 
         <div className="gglra-auth-portal-footer-links">
@@ -131,7 +135,7 @@ backgroundImage: `linear-gradient(#0F172A66,#0F172A66), url(${bgImage})`
         </h4>
 
         <span className="gglra-auth-portal-opportunity-location">
-          Manhattan, New York
+         <img src={location} alt="" /> Manhattan, New York
         </span>
         </div>
       </div>

@@ -15,7 +15,7 @@
 //       </div>
 
 //       {/* Navigation Links */}
-//       <ul className={isMobile ? "nav-links-mobile" : "nav-links"} 
+//       <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
 //           onClick={() => setIsMobile(false)}>
 //         <li><a href="#home">Home</a></li>
 //         <li><a href="#about" className="">About</a></li>
@@ -44,21 +44,18 @@
 
 // export default Navbar;
 
-
-
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
-import '../../Styles/Header.css';
-import logo from '../../assets/logo.png';
-import signin from '../../assets/Header/signin.png';
-import signup from '../../assets/Header/signup.png';
-
+import "../../Styles/Header.css";
+import logo from "../../assets/logo.png";
+import signin from "../../assets/Header/signin.png";
+import signup from "../../assets/Header/signup.png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   return (
     <nav className="navbar">
-
       {/* Logo */}
       <div className="nav-logo">
         <HashLink smooth to="/#home">
@@ -67,41 +64,66 @@ const Navbar = () => {
       </div>
 
       {/* Navigation Links */}
-      <ul 
-        className={isMobile ? "nav-links-mobile" : "nav-links"} 
+      <ul
+        className={isMobile ? "nav-links-mobile" : "nav-links"}
         onClick={() => setIsMobile(false)}
       >
-        <li><HashLink smooth to="/#home">Home</HashLink></li>
-        <li><HashLink smooth to="/#about-us">About</HashLink></li>
-        <li><HashLink smooth to="/#portfolio">Properties</HashLink></li>
-        <li><HashLink smooth to="/#why-choose">Why Choose</HashLink></li>
-        <li><HashLink smooth to="/#regulation-section">Contact</HashLink></li>
-         <li className="btn-signin-mobile">
-       <HashLink smooth to="#">Sign In</HashLink>
+        <li>
+          <HashLink smooth to="/#home">
+            Home
+          </HashLink>
+        </li>
+        <li>
+          <HashLink smooth to="/#about-us">
+            About
+          </HashLink>
+        </li>
+        <li>
+          <HashLink smooth to="/#portfolio">
+            Properties
+          </HashLink>
+        </li>
+        <li>
+          <HashLink smooth to="/#why-choose">
+            Why Choose
+          </HashLink>
+        </li>
+        <li>
+          <HashLink smooth to="/#regulation-section">
+            Contact
+          </HashLink>
+        </li>
+        <li className="btn-signin-mobile">
+          <HashLink smooth to="#">
+            Sign In
+          </HashLink>
         </li>
         <li className="btn-signup-mobile">
-          <HashLink smooth to="">Sign Up</HashLink>
+          <HashLink smooth to="">
+            Sign Up
+          </HashLink>
         </li>
       </ul>
 
       {/* Auth Buttons */}
       <div className="nav-auth">
-        <button className="btn-signin">
-          Sign In <img src={signin} alt="Sign In Icon" className="signin-icon" />
-        </button>
-        <button className="btn-signup">
-          Sign Up <img src={signup} alt="Sign Up Icon" className="signup-icon" />
-        </button>
+        <Link to="/signin" className="btn-signin">
+          Sign In{" "}
+          <img src={signin} alt="Sign In Icon" className="signin-icon" />
+        </Link>
+        <Link to="/signup" className="btn-signup">
+          Sign Up{" "}
+          <img src={signup} alt="Sign Up Icon" className="signup-icon" />
+        </Link>
       </div>
 
       {/* Mobile Toggle */}
-      <button 
-        className="mobile-menu-icon" 
+      <button
+        className="mobile-menu-icon"
         onClick={() => setIsMobile(!isMobile)}
       >
         {isMobile ? "✕" : "☰"}
       </button>
-
     </nav>
   );
 };
